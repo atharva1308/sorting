@@ -1,4 +1,4 @@
-#Selection Sort
+# Selection Sort
 def sort(arr):
     n=len(arr)
     for i in range(n):
@@ -7,13 +7,15 @@ def sort(arr):
             if arr[j]<arr[min_index]:
                 min_index=j
         arr[i], arr[min_index]=arr[min_index], arr[i]
-
     print(arr)
 
+# Driver Code
+    
 raw_string=input("Enter Numbers Separated By Commas :: ")
 raw_nums=raw_string.split(",")
 n=len(raw_nums)
 nums=[]
+
 for i in range(n):
     nums.append(int(raw_nums[i]))
 
